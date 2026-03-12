@@ -8,7 +8,7 @@
 - [ ] Images
 
 ## Layout
-- [ ] navigation
+- [x] navigation
 
 ## Pages
 - [ ] About
@@ -18,10 +18,10 @@
 
 
 ## Cleaning
-- [ ] Remove articles
-- [ ] Remove testimonial
-- [ ] Remove blog
-- [ ] Remove old personal information
+- [x] Remove articles
+- [x] Remove testimonial
+- [x] Remove blog
+- [x] Remove old personal information
 
 ## Deploy
 - [ ] publish repo
