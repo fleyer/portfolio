@@ -66,6 +66,14 @@ export default defineContentConfig({
         date: z.date()
       })
     }),
+    projects: defineCollection({
+      type: 'data',
+      source: 'gallery.yml',
+      schema: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+      })
+    }),
     pages: defineCollection({
       type: 'page',
       source: [
@@ -78,6 +86,14 @@ export default defineContentConfig({
     about: defineCollection({
       type: 'page',
       source: 'about.yml',
+      schema: z.object({
+        content: z.object({}),
+        images: z.array(createImageSchema())
+      })
+    }),
+    gallery: defineCollection({
+      type: 'page',
+      source: 'gallery.yml',
       schema: z.object({
         content: z.object({}),
         images: z.array(createImageSchema())
