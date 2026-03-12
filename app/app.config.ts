@@ -1,12 +1,11 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      light: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      dark: 'https://media.licdn.com/dms/image/v2/D4E03AQHR6uPkSrSGxQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699648253421?e=1775088000&v=beta&t=FSWLXD3b3Z9KIw-Vwp7o2vX971Q4q1XYPcra5X9epps',
+      light: 'https://media.licdn.com/dms/image/v2/D4E03AQHR6uPkSrSGxQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699648253421?e=1775088000&v=beta&t=FSWLXD3b3Z9KIw-Vwp7o2vX971Q4q1XYPcra5X9epps',
       alt: 'My profile picture'
     },
-    meetingLink: 'https://cal.com/',
-    email: 'ui-pro@nuxt.com',
+    email: 'manchado.romain@gmail.com',
     available: true
   },
   ui: {
