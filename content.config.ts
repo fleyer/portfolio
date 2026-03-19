@@ -35,12 +35,13 @@ export default defineContentConfig({
       type: 'page',
       source: 'index.yml',
       schema: z.object({
+        icon: z.string().nonempty(),
         hero: z.object({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())
         }),
         about: createBaseSchema(),
-        experience: createBaseSchema().extend({
+        experiences: createBaseSchema().extend({
           items: z.array(z.object({
             date: z.date(),
             position: z.string(),
@@ -66,18 +67,30 @@ export default defineContentConfig({
         date: z.date()
       })
     }),
-    projects: defineCollection({
+    experiences: defineCollection({
       type: 'data',
-      source: 'gallery.yml',
+      source: 'experiences/*.yml',
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
+        summary: z.string().nonempty(),
+        logo: z.string().nonempty(),
+        startDate: z.string().nonempty(),
+        endDate: z.string().nonempty(),
+        position: z.string(),
+        company: z.object({
+          name: z.string(),
+          url: z.string(),
+          color: z.string()
+        })
       })
     }),
+
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'projects.yml' }
+        { include: 'projects.yml' },
+        { include: 'experiences.yml'}
       ],
       schema: z.object({
         links: z.array(createButtonSchema())

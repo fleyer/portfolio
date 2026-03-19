@@ -1,14 +1,33 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+const { data: page } = useAsyncData("experience-page", () => {
+  return queryCollection("pages").path('/experiences').first()
+})
+const { data: experiences } = await useAsyncData('experiences-landing', () => {
+  return queryCollection('experiences').order("startDate","DESC").all()
+})
 
-defineProps<{
-  page: IndexCollectionItem
-}>()
+if(!page.value){
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
+  })
+}
+
+if (!experiences.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
+  })
+}
+
 </script>
 
 <template>
   <UPageSection
-    :title="page.experience.title"
+    v-if="page"
+    :title="page.title"
     :ui="{
       container: '!p-0 gap-4 sm:gap-4',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
@@ -18,7 +37,7 @@ defineProps<{
     <template #description>
       <div class="flex flex-col gap-2">
         <Motion
-          v-for="(experience, index) in page.experience.items"
+          v-for="(experience, index) in experiences"
           :key="index"
           :initial="{ opacity: 0, transform: 'translateY(20px)' }"
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
@@ -27,13 +46,12 @@ defineProps<{
           class="text-muted flex items-center text-nowrap gap-2"
         >
           <p class="text-sm">
-            {{ experience.date }}
+            {{ experience.startDate }}
           </p>
           <USeparator />
           <ULink
             class="flex items-center gap-1"
-            :to="experience.company.url"
-            target="_blank"
+            :to="`/${experience.stem}`"
           >
             <span class="text-sm">
               {{ experience.position }}

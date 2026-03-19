@@ -80,7 +80,7 @@ defineProps<{
           delay: 0.3
         }"
       >
-        {{ page.description }}
+        {{ page.description }} <UIcon :name="page.icon"/>
       </Motion>
     </template>
 

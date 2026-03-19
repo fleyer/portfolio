@@ -1,0 +1,110 @@
+title: IoT & Smart Building Platform Engineer
+summary: bell summary
+company:
+  name: Bell
+  color: rgb(0, 84, 154)
+  url: https://www.bell.ca/
+position: Full stack developper
+duration: 41
+startDate: 2021
+endDate: 2025
+logo: /img/bell_img.png
+description: |
+  ### Phase 1:
+  IoT Data Ingestion & Real-time Monitoring
+  Developed serverless data processing pipelines to ingest and analyze telemetry from industrial diesel generators.
+
+  #### Achievements:
+    - Built a reporting engine to automate generator activity tracking (runs and test cycles), providing critical operational insights to stakeholders.
+    - Improved database resource
+    - Successful onboarding on UI, the team is able to provide real time alarms page
+
+  #### Stack:
+
+  ::badge
+  Node.js
+  ::
+  ::badge
+  Java
+  ::
+  ::badge
+  Azure Functions
+  ::
+  ::badge
+  Terraform
+  ::
+  ::badge
+  Docker
+  ::
+  ::badge
+  Vue.js
+  ::
+
+  ### Phase 2:
+  Enterprise Platform Migration & Scalability
+  Supported the strategic migration of vertical IoT solutions into a unified, large-scale enterprise platform.
+
+  #### Achievements:
+    - Rebuilt the reporting engine from the ground up to meet new high-scale customer requirements and deployed the core infrastructure for the migrated services.
+    - Specified and built an aggregator service to enable the platform to process telemetries from related assets
+
+  #### Stack:
+  ::badge
+  Node.js
+  ::
+  ::badge
+  Java (Quarkus)
+  ::
+  ::badge
+  Kubernetes (AKS)
+  ::
+  ::badge
+  Azure
+  ::
+  ::badge
+  Terraform
+  ::
+  ::badge
+  Redis
+  ::
+  ::badge
+  CosmosDB
+  ::
+  ::badge
+  MongoDB
+  ::
+  ::badge
+  GitLab CI/CD.
+  ::
+
+  ### Phase 3:
+  Real-Time Data Engineering & DevOps Excellence. Designed a new spark pipelien to ingest real time genrator telemetries and calculate fuel consumption.
+  Tasked with re-engineering a legacy real-time geolocation tracking pipeline to improve reliability and maintainability.
+
+  #### Achievements:
+    - Successfully migrated a PySpark/Azure Synapse pipeline to a modern development workflow. Introduced unit testing, Dev Containers for environment parity, and fully automated GitLab CI/CD pipelines to ensure stable production deployments.
+
+  #### Stack:
+  ::badge
+  Python
+  ::
+  ::badge
+  PySpark
+  ::
+  ::badge
+  Azure Synapse
+  ::
+  ::badge
+  GitLab CI/CD
+  ::
+  ::badge
+  Dev Containers
+  ::
+
+  #### Cross-Functional Contributions:
+
+  - Quality Assurance: Enhanced the testing ecosystem using Robot Framework to develop E2E test suites, creating custom keywords for Azure Event Hub to validate asynchronous event-driven architectures.
+
+  - Devx : improve Gitlab pipeline by making it quicker and also provide new features to company own tools
+
+  - Agile Collaboration: Actively participated in Scrum ceremonies, contributing to architectural design and technical strategy.

@@ -1,0 +1,29 @@
+title: Lead Developpeur
+summary: Pilot things summary
+company:
+  name: Pilot Things
+  color: orange
+  url: https://www.pilot-things.com/en
+position: Lead developper
+startDate: 2017
+endDate: 2021
+duration: 46
+logo: /img/pilot_things_img.png
+description: |
+  Full-stack Developer (Initial) → Lead Developer (Promotion)
+
+  Missions & Responsibilities
+    - Platform Evolution & Leadership: Joined the existing engineering team to drive the development of the Pilot Things platform. Progressed to a Lead Developer role, taking ownership of feature planning, architectural design, and complex problem resolution.
+    - Hybrid Cloud Orchestration: Managed and optimized platform deployments across AWS and On-Premise environments, utilizing Infrastructure as Code (IaC) to ensure consistency across diverse infrastructures.
+    - Mentorship & Team Growth: As Lead, mentored a small development team, implementing better coding standards and providing technical coaching to accelerate project delivery.
+
+  Core Tech Stack:
+    - Backend: Spring, Spring Boot, Node.js, Serverless (AWS Lambda), JWT, AWS Cognito.
+    - Frontend: React, Preact.
+    - DevOps: Terraform, AWS, Cloud-init.
+
+  Key Achievements
+    - 10x Performance Optimization: Identified and resolved bottlenecks in the existing codebase through deep profiling, reducing data processing latency from >1s to <100ms.
+    - Scalable Architecture: Implemented Multi-tenancy to support business expansion and built a custom data modeling engine allowing users to define their own device transformations.
+    - Rapid Response Engineering: Spearheaded the development of a COVID-19 tracking MVP in under 30 days, demonstrating the platform’s adaptability to urgent market needs.
+    - Service Innovation: Expanded company offerings by architecting Serverless processing pipelines, enabling highly scalable and cost-efficient handling of incoming IoT telemetry.

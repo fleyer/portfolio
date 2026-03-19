@@ -10,6 +10,12 @@ export default defineNuxtConfig({
     'motion-v/nuxt'
   ],
 
+  vite: {
+    optimizeDeps: {
+      include: []
+    }
+  },
+
   devtools: {
     enabled: true
   },
