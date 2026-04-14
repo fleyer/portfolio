@@ -72,18 +72,24 @@ export default defineContentConfig({
       source: 'experiences/*.yml',
       schema: z.object({
         title: z.string().nonempty(),
-        description: z.string().nonempty(),
         summary: z.string().nonempty(),
         logo: z.string().nonempty(),
         startDate: z.string().nonempty(),
         endDate: z.string().nonempty(),
         position: z.string(),
+        location: z.string(),
+        country: z.string(),
         company: z.object({
           name: z.string(),
           url: z.string(),
           color: z.string()
         })
       })
+    }),
+
+    experiencesContent: defineCollection({
+      type: 'page',
+      source: 'experiences/*.md'
     }),
 
     pages: defineCollection({

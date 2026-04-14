@@ -1,0 +1,40 @@
+title: Lead Developpeur
+summary: Pilot things summary
+company:
+  name: Pilot Things
+  color: orange
+  url: https://www.pilot-things.com/en
+position: Lead developper
+startDate: 2017
+endDate: 2021
+duration: 46
+logo: /img/pilot_things_img.png
+description: |
+  Développeur Full-stack (initial) → Lead Developer (promotion)
+
+  Missions et responsabilités
+
+  * Évolution de la plateforme et leadership : intégration à l’équipe d’ingénierie existante pour piloter le développement de la plateforme Pilot Things. Évolution vers un rôle de Lead Developer, avec la responsabilité de la planification des fonctionnalités, de la conception architecturale et de la résolution de problèmes complexes.
+
+  * Orchestration cloud hybride : gestion et optimisation des déploiements de la plateforme sur des environnements AWS et on-premise, en utilisant l’Infrastructure as Code (IaC) pour garantir la cohérence entre des infrastructures variées.
+
+  * Mentorat et développement de l’équipe : en tant que Lead, accompagnement d’une petite équipe de développeurs, mise en place de meilleures pratiques de code et coaching technique pour accélérer la livraison des projets.
+
+  Stack technique principale :
+
+  * Backend : Spring, Spring Boot, Node.js, Serverless (AWS Lambda), JWT, AWS Cognito.
+
+  * Frontend : React, Preact.
+
+  * DevOps : Terraform, AWS, Cloud-init.
+
+  Réalisations clés
+
+  * Optimisation des performances x10 : identification et résolution des goulots d’étranglement dans le code existant grâce à une analyse approfondie, réduisant la latence de traitement des données de plus d’1 seconde à moins de 100 ms.
+
+  * Architecture scalable : mise en place du multi-tenant pour accompagner la croissance de l’entreprise et développement d’un moteur de modélisation de données permettant aux utilisateurs de définir leurs propres transformations de dispositifs.
+
+  * Ingénierie en réponse rapide : pilotage du développement d’un MVP de suivi du COVID-19 en moins de 30 jours, démontrant la capacité de la plateforme à s’adapter à des besoins urgents du marché.
+
+  * Innovation de services : élargissement de l’offre de l’entreprise en concevant des pipelines de traitement serverless, permettant une gestion hautement scalable et optimisée en coûts des flux de télémétrie IoT entrants.
+

@@ -1,5 +1,10 @@
 title: Lead Developpeur
-summary: Pilot things summary
+summary: |
+  Freshly graduated from my master degree in computer science, I've decided to leave France and everything I knew to start
+  a new adventure in Canada. Pilot Things a new startup working in the IoT domain offered my first experience as Full stack
+  developper. The challenge was real : a small team with a lot of ambition. Working in a startup is the kind of experience that
+  helps to build a very strong mindset. I had to learn everything so the company could be more and more successful. From the
+  front-end to the back-end and infrastructure, my contributions are everywhere.
 company:
   name: Pilot Things
   color: orange
@@ -8,6 +13,8 @@ position: Lead developper
 startDate: 2017
 endDate: 2021
 duration: 46
+location: Montréal
+country: Canada
 logo: /img/pilot_things_img.png
 description: |
   Full-stack Developer (Initial) → Lead Developer (Promotion)

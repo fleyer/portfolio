@@ -1,15 +1,21 @@
 title: IoT & Smart Building Platform Engineer
-summary: bell summary
+summary: |
+  Bell is a very well know historic telecommunication company in Canada. I've joined the team to help
+  them develop their smart-building plateform. Later my role in the team evolve as I was then charged to design
+  complex feature as well as implement them. The trusting relationship we built at the time helped the team to
+  be one of the most successful among the all the IoT teams @Bell.
+
 company:
   name: Bell
   color: rgb(0, 84, 154)
   url: https://www.bell.ca/
 position: Full stack developper
+location: Montréal
+country: Canada
 duration: 41
 startDate: 2021
 endDate: 2025
 logo: /img/bell_img.png
-description: |
   ### Phase 1:
   IoT Data Ingestion & Real-time Monitoring
   Developed serverless data processing pipelines to ingest and analyze telemetry from industrial diesel generators.

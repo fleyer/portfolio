@@ -61,7 +61,6 @@ if (!experiences.value) {
               :style="{ color: experience.company.color }"
             >
               <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
             </div>
           </ULink>
         </Motion>

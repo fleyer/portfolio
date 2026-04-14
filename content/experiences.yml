@@ -2,7 +2,7 @@ title: Experiences
 description:
 experiences:
   - title: Out for adventures
-    summary: The best way learn about my experiences in 2025 - 2026 is to organise a call or an interview, isn't it ?
+    summary: Why not organise a call or an interview to learn about my little detour on the way to France during 2025/2026
     company:
       name: My trip
       color:
@@ -21,33 +21,6 @@ experiences:
     duration: 41
     date: 2021 - 2025
     logo: /img/bell_img.png
-    description: |
-      Phase 1: IoT Data Ingestion & Real-time Monitoring
-      Developed serverless data processing pipelines to ingest and analyze telemetry from industrial diesel generators.
-
-      - Achievements: Built a reporting engine to automate generator activity tracking (runs and test cycles), providing critical operational insights to stakeholders.
-
-      - Stack: Node.js, Azure Functions (Serverless), Terraform, Docker, Vue.js, Real-time Alarms.
-
-      Phase 2: Enterprise Platform Migration & Scalability
-      Supported the strategic migration of vertical IoT solutions into a unified, large-scale enterprise platform.
-
-      - Achievements: Rebuilt the reporting engine from the ground up to meet new high-scale customer requirements and deployed the core infrastructure for the migrated services.
-
-      - Stack: Node.js, Java (Quarkus), Kubernetes (AKS), Azure, Terraform, Redis, CosmosDB, MongoDB, GitLab CI/CD.
-
-      Phase 3: Real-Time Data Engineering & DevOps Excellence
-      Tasked with re-engineering a legacy real-time geolocation tracking pipeline to improve reliability and maintainability.
-
-      - Achievements: Successfully migrated a PySpark/Azure Synapse pipeline to a modern development workflow. Introduced unit testing, Dev Containers for environment parity, and fully automated GitLab CI/CD pipelines to ensure stable production deployments.
-
-      - Stack: Python, PySpark, Azure Synapse, GitLab CI/CD, Dev Containers.
-
-      Cross-Functional Contributions:
-
-      - Quality Assurance: Enhanced the testing ecosystem using Robot Framework to develop E2E test suites, creating custom keywords for Azure Event Hub to validate asynchronous event-driven architectures.
-
-      - Agile Collaboration: Actively participated in Scrum ceremonies, contributing to architectural design and technical strategy.
   - title: Lead Developpeur
     summary: Pilot things summary
     company:
@@ -58,21 +31,3 @@ experiences:
     date: 2017 - 2021
     duration: 46
     logo: /img/pilot_things_img.png
-    description: |
-      Full-stack Developer (Initial) → Lead Developer (Promotion)
-
-      Missions & Responsibilities
-        - Platform Evolution & Leadership: Joined the existing engineering team to drive the development of the Pilot Things platform. Progressed to a Lead Developer role, taking ownership of feature planning, architectural design, and complex problem resolution.
-        - Hybrid Cloud Orchestration: Managed and optimized platform deployments across AWS and On-Premise environments, utilizing Infrastructure as Code (IaC) to ensure consistency across diverse infrastructures.
-        - Mentorship & Team Growth: As Lead, mentored a small development team, implementing better coding standards and providing technical coaching to accelerate project delivery.
-
-      Core Tech Stack:
-        - Backend: Spring, Spring Boot, Node.js, Serverless (AWS Lambda), JWT, AWS Cognito.
-        - Frontend: React, Preact.
-        - DevOps: Terraform, AWS, Cloud-init.
-
-      Key Achievements
-        - 10x Performance Optimization: Identified and resolved bottlenecks in the existing codebase through deep profiling, reducing data processing latency from >1s to <100ms.
-        - Scalable Architecture: Implemented Multi-tenancy to support business expansion and built a custom data modeling engine allowing users to define their own device transformations.
-        - Rapid Response Engineering: Spearheaded the development of a COVID-19 tracking MVP in under 30 days, demonstrating the platform’s adaptability to urgent market needs.
-        - Service Innovation: Expanded company offerings by architecting Serverless processing pipelines, enabling highly scalable and cost-efficient handling of incoming IoT telemetry.

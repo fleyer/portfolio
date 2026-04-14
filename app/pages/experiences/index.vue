@@ -67,7 +67,7 @@ useSeoMeta({
             wrapper: 'max-lg:order-last'
           }"
         >
-          <div class="bg-white p-10 rounded-lg">
+          <div v-if="experience.logo" class="bg-white p-10 rounded-lg">
             <NuxtImg :src="experience.logo" class="w-full"/>
           </div>
           <template #leading>
@@ -78,7 +78,7 @@ useSeoMeta({
 
           <template #footer>
             <div v-if="index === 0">
-              <UButton>Mail me</UButton>
+              <UButton>Mail me <UIcon name="i-lucide-mail"></UIcon></UButton>
             </div>
           </template>
         </UPageCard>
