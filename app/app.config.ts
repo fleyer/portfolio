@@ -6,6 +6,10 @@ export default defineAppConfig({
       alt: 'My profile picture'
     },
     email: 'manchado.romain@gmail.com',
+    socials: [
+      {link: 'https://www.linkedin.com/in/rmanchado', icon: 'i-lucide-linkedin'},
+      {link: 'https://github.com/fleyer?tab=repositories', icon: 'i-lucide-github'},
+    ],
     available: true
   },
   ui: {

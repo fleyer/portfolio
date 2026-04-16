@@ -82,6 +82,9 @@ defineProps<{
         }"
       >
         {{ page.description }} <UIcon :name="page.icon"/>
+        <div class="mt-10 flex justify-center gap-4">
+          <NuxtLink v-for="social in global.socials" class="rounded-full border border-solid w-10 h-10 flex justify-center items-center" :to="social.link" target="blank" external><UIcon :name="social.icon"/></NuxtLink>
+        </div>
       </Motion>
     </template>
 
