@@ -22,6 +22,18 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  icon: {
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 256,
+
+      icons:[
+        "lucide:sun",
+        "lucide:moon",
+      ]
+    },
+  },
+
   compatibilityDate: '2024-11-01',
 
   nitro: {

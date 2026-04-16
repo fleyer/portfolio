@@ -1,8 +1,8 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://media.licdn.com/dms/image/v2/D4E03AQHR6uPkSrSGxQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699648253421?e=1775088000&v=beta&t=FSWLXD3b3Z9KIw-Vwp7o2vX971Q4q1XYPcra5X9epps',
-      light: 'https://media.licdn.com/dms/image/v2/D4E03AQHR6uPkSrSGxQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699648253421?e=1775088000&v=beta&t=FSWLXD3b3Z9KIw-Vwp7o2vX971Q4q1XYPcra5X9epps',
+      dark: '/romain_manchado.jpg',
+      light: '/romain_manchado.jpg',
       alt: 'My profile picture'
     },
     email: 'manchado.romain@gmail.com',
