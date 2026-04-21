@@ -55,18 +55,6 @@ export default defineContentConfig({
         }),
       })
     }),
-    projects: defineCollection({
-      type: 'data',
-      source: 'projects/*.yml',
-      schema: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
-        tags: z.array(z.string()),
-        date: z.date()
-      })
-    }),
     experiences: defineCollection({
       type: 'data',
       source: 'experiences/*.yml',
@@ -95,19 +83,10 @@ export default defineContentConfig({
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'projects.yml' },
         { include: 'experiences.yml'}
       ],
       schema: z.object({
         links: z.array(createButtonSchema())
-      })
-    }),
-    about: defineCollection({
-      type: 'page',
-      source: 'about.yml',
-      schema: z.object({
-        content: z.object({}),
-        images: z.array(createImageSchema())
       })
     }),
     gallery: defineCollection({
