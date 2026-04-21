@@ -12,7 +12,7 @@ const props = defineProps<NavigationProps>()
 <template>
 
   <UContainer class="flex gap-4">
-    <ULink :to="'/'+ (previous?.stem || '#')" class="flex group" :disabled="!previous">
+    <ULink :to="'/'+ (previous?.stem || '#')" :disabled="!previous" class="flex group">
       <UCard>
         <div class="flex justify-center items-center rounded-full bg-gray-100 w-10 h-10 group-hover:bg-gray-200">
           <UIcon name="i-lucide-arrow-left"></UIcon>
@@ -22,7 +22,7 @@ const props = defineProps<NavigationProps>()
 
       </UCard>
     </ULink>
-    <ULink :to="'/'+next?.stem || '#'" :disabled="!next" class="flex group">
+    <ULink :to="'/'+ ( next?.stem || '#' )" :disabled="!next" class="flex group">
       <UCard>
         <div class="flex justify-center items-center rounded-full bg-gray-100 w-10 h-10 group-hover:bg-gray-200">
           <UIcon name="i-lucide-arrow-right"></UIcon>
