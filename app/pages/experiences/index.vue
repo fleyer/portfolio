@@ -65,11 +65,12 @@ useSeoMeta({
           class="group"
           :to="`/${experience.stem}`"
           :ui="{
-            wrapper: 'max-lg:order-last'
+            wrapper: 'max-lg:order-last',
+            description: 'line-clamp-3 overflow-hidden text-ellipsis'
           }"
         >
-          <div v-if="experience.logo" class="bg-white p-10 rounded-lg">
-            <NuxtImg :src="experience.logo" class="w-full"/>
+          <div v-if="experience.logo" class="bg-white p-10 rounded-lg flex justify-center items-center">
+            <NuxtImg :src="experience.logo" class="w-full max-w-100"/>
           </div>
           <template #leading>
             <span class="text-sm text-muted">
@@ -80,6 +81,9 @@ useSeoMeta({
           <template #footer>
             <div v-if="index === 0">
               <UButton>Mail me <UIcon name="i-lucide-mail"></UIcon></UButton>
+            </div>
+            <div v-if="index !== 0">
+              <UButton :to="`/${experience.stem}`">More</UButton>
             </div>
           </template>
         </UPageCard>

@@ -50,7 +50,7 @@ if(experience.value == null || experienceContent.value == null){
           <div class="flex-2">{{ experience.summary }}</div>
           <div class="p-10 rounded b-white flex-1">
             <NuxtLink target="blank" :to="experience.company.url">
-              <NuxtImg :src="experience.logo" class="w-full"/>
+              <NuxtImg v-if="experience.logo" :src="experience.logo" class="w-full"/>
             </NuxtLink>
           </div>
         </div>
