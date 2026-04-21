@@ -12,6 +12,10 @@ const { data: experienceContent } = await useAsyncData(route.path+"/content", ()
   return queryCollection("experiencesContent").path(route.path).first()
 })
 
+const { data : page } = await useAsyncData(route.path+"/page", () => {
+  return queryCollection("index").first()
+})
+
 if(experience.value == null || experienceContent.value == null){
   throw createError({
     status: 404,
@@ -20,8 +24,15 @@ if(experience.value == null || experienceContent.value == null){
   })
 }
 
- const next = await useNavNext(experience)
- const previous = await useNavPrevious(experience)
+const next = await useNavNext(experience)
+const previous = await useNavPrevious(experience)
+
+useSeoMeta({
+  title: page.value?.seo?.title || page.value?.title,
+  ogTitle: page.value?.seo?.title || page.value?.title,
+  description: page.value?.seo?.description || page.value?.description,
+  ogDescription: page.value?.seo?.description || page.value?.description
+})
 
 </script>
 <template>
@@ -58,7 +69,7 @@ if(experience.value == null || experienceContent.value == null){
 
     </UPageHero>
     <UPageSection>
-      <ContentRenderer :value="experienceContent"></ContentRenderer>
+      <ContentRenderer :value="experienceContent" :data="{ test: () => { console.log('test')}}"></ContentRenderer>
       <template #bottom>
         <Navigation :next="next" :previous="previous"></Navigation>
       </template>
