@@ -1,20 +1,20 @@
 # TODO :
 
 ## Personal info
-- [ ] Name
-- [ ] Experiences
+- [x] Name
+- [x] Experiences
 
 ## Photography
-- [ ] Images
+- [x] Images
 
 ## Layout
 - [x] navigation
 
 ## Pages
-- [ ] About
-- [ ] Experiences
-- [ ] Projects
-- [ ] Gallery
+- [x] About
+- [x] Experiences
+- [x] Projects
+- [x] Gallery
 
 
 ## Cleaning

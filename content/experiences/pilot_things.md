@@ -7,15 +7,15 @@
 
 #### Core Tech Stack:
   - Backend: 
-  ::badges
+  ::badgeList
   Spring,Spring Boot,Node.js,Serverless (AWS Lambda),JWT,AWS Cognito
   ::
   - Frontend: 
-  ::badges
+  ::badgeList
   React,Preact
   ::
   - DevOps: 
-  ::badges
+  ::badgeList
   Terraform,AWS,Cloud-init
   ::  
 

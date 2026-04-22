@@ -40,7 +40,7 @@ defineProps<{
           :light="global.picture?.light!"
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
-          :as="{ img: 'img'}"
+          :as="{ img: 'img' }"
         />
       </Motion>
     </template>
@@ -83,9 +83,16 @@ defineProps<{
           delay: 0.3
         }"
       >
-        {{ page.description }} <UIcon :name="page.icon"/>
+        {{ page.description }} <UIcon :name="page.icon" />
         <div class="mt-10 flex justify-center gap-4">
-          <NuxtLink v-for="social in global.socials" class="rounded-full border border-solid w-10 h-10 flex justify-center items-center" :to="social.link" target="blank" external><UIcon :name="social.icon"/></NuxtLink>
+          <NuxtLink
+            v-for="(social, index) in global.socials"
+            :key="index"
+            class="rounded-full border border-solid w-10 h-10 flex justify-center items-center"
+            :to="social.link"
+            target="blank"
+            external
+          ><UIcon :name="social.icon" /></NuxtLink>
         </div>
       </Motion>
     </template>
@@ -127,11 +134,8 @@ defineProps<{
   </UPageHero>
 </template>
 
-
 <style lang="css" scoped>
-
 .half-height {
   height: 50%;
 }
-
 </style>

@@ -7,9 +7,9 @@ export default defineAppConfig({
     },
     email: 'manchado.romain@gmail.com',
     socials: [
-      {link: 'https://www.linkedin.com/in/rmanchado', icon: 'i-lucide-linkedin'},
-      {link: 'https://bsky.app/profile/oro-wa.bsky.social', icon: 'i-simple-icons-bluesky'},
-      {link: 'https://github.com/fleyer?tab=repositories', icon: 'i-lucide-github'},
+      { link: 'https://www.linkedin.com/in/rmanchado', icon: 'i-lucide-linkedin' },
+      { link: 'https://bsky.app/profile/oro-wa.bsky.social', icon: 'i-simple-icons-bluesky' },
+      { link: 'https://github.com/fleyer?tab=repositories', icon: 'i-lucide-github' }
     ],
     available: true
   },

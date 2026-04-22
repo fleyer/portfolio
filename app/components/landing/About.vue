@@ -16,10 +16,9 @@ defineProps<{
     }"
   >
     <template #description>
-      <MDC :value="page.about.description"/>
+      <MDC :value="page.about.description" />
     </template>
   </UPageSection>
-
 </template>
 
 <style scoped>

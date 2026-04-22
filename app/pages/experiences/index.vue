@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('experience-page', () => {
-  return queryCollection('pages').path("/experiences").first()
+  return queryCollection('pages').path('/experiences').first()
 })
 const { data: experiences } = await useAsyncData('experiences', () => {
-  return queryCollection('experiences').order("startDate","DESC").all()
+  return queryCollection('experiences').order('startDate', 'DESC').all()
 })
 
 if (!page.value) {
@@ -50,7 +50,7 @@ useSeoMeta({
         container: '!pt-0'
       }"
     >
-       <Motion
+      <Motion
         v-for="(experience, index) in experiences"
         :key="experience.title"
         :initial="{ opacity: 0, transform: 'translateY(10px)' }"
@@ -69,8 +69,14 @@ useSeoMeta({
             description: 'line-clamp-3 overflow-hidden text-ellipsis'
           }"
         >
-          <div v-if="experience.logo" class="bg-white p-10 rounded-lg flex justify-center items-center">
-            <NuxtImg :src="experience.logo" class="w-full max-w-100"/>
+          <div
+            v-if="experience.logo"
+            class="bg-white p-10 rounded-lg flex justify-center items-center"
+          >
+            <NuxtImg
+              :src="experience.logo"
+              class="w-full max-w-100"
+            />
           </div>
           <template #leading>
             <span class="text-sm text-muted">
@@ -80,10 +86,12 @@ useSeoMeta({
 
           <template #footer>
             <div v-if="index === 0">
-              <UButton>Mail me <UIcon name="i-lucide-mail"></UIcon></UButton>
+              <UButton>Mail me <UIcon name="i-lucide-mail" /></UButton>
             </div>
             <div v-if="index !== 0">
-              <UButton :to="`/${experience.stem}`">More</UButton>
+              <UButton :to="`/${experience.stem}`">
+                More
+              </UButton>
             </div>
           </template>
         </UPageCard>

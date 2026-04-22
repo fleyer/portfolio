@@ -4,16 +4,17 @@ Developed serverless data processing pipelines to ingest and analyze telemetry f
 
 #### My achievements:
   - Built a reporting engine to automate generator activity tracking (runs and test cycles), providing critical operational insights to stakeholders.
-  - Improved database resource
+  - Improved database resource utilization 
   - Successful onboarding on UI, the team was able to provide real time alarms page
 
 ### Key metrics :icon{name="i-lucide-rocket"}
   - Trunk base versioning allowed us to deploy multiple times during the week
-  - the first weeks the application ingested ~2To of telemetry data (devices were spamming the plateform because of a configuration issue) (bad data is still data :icon{name="i-lucide-bomb"} )
+  - The first weeks the application ingested ~2To of telemetry data (devices were spamming the plateform because of a configuration issue) (bad data is still data :icon{name="i-lucide-bomb"} )
+  - Achieved a 66% reduction in database resource cost
 
 #### Stack:
 
-::badges
+::badgeList
 Node.js,Java,Azure Functions,Azure CosmosDB,Terraform,Kubernetes,Docker,Vue.js
 ::
 
@@ -24,16 +25,18 @@ Supported the strategic migration of vertical IoT solutions into a unified, larg
 #### My achievements:
   - Rebuilt the reporting engine from the ground up to meet new high-scale customer requirements and deployed the core infrastructure for the migrated services.
   - Specified and built an aggregator service to enable the platform to process telemetries from related assets
+  - Identified and solved a race condition when the platform was ingesting and processing incomming messages
   - The plateform became device agnostic
 
 ### Key metrics :icon{name="i-lucide-rocket"}
   - Feature with high interest where added to the platform enabling more customer use case
   - Proposed planning cut previous estimation in half thanks to a better architecture
+  - Noise caused by the race condition completely disapeared
 
 #### Stack:
 
-::badges
-Node.js,Java (Quarkus),Kubernetes (AKS),Azure,Terraform,Redis,CosmosDB,MongoDB,GitLab CI/CD
+::badgeList
+Node.js,Typescript,Vue.js,Java,Srping Boot,Quarkus,Kubernetes (AKS),Azure,Terraform,Redis,CosmosDB,MongoDB,GitLab CI/CD
 ::
 
 ### Phase 3:
@@ -47,13 +50,13 @@ Plus integration of new kind of assets with grouping / splitting telemetries cap
   - Thanks to my design proposition one service could be improved instead of going through a full rewrite
 
 ### Key Metrics :icon{name="i-lucide-rocket"}
-  - Smooth deployment of the new pyspark pipeline into production
-  - The all team was able to start contributing on the project thanks to the devcontainer
+  - Smoother deployment of the new pyspark pipeline into production. Reduced release cycle time from months to weeks
+  - The entire team was able to start contributing on the project thanks to the devcontainer
   - Testing utility tool developped was then used by other teams
 
 #### Stack:
 
-::badges
+::badgeList
 Python,PySpark,Azure Synapse,GitLab CI/CD,Dev Containers
 ::
 

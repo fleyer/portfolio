@@ -1,5 +1,3 @@
-
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -13,25 +11,7 @@ export default defineNuxtConfig({
     '@nuxtjs/mdc'
   ],
 
-  vite: {
-    optimizeDeps: {
-      include: []
-    }
-  },
-
   css: ['~/assets/css/main.css'],
-
-  icon: {
-    clientBundle: {
-      scan: true,
-      sizeLimitKb: 256,
-
-      icons:[
-        "lucide:sun",
-        "lucide:moon",
-      ]
-    },
-  },
 
   compatibilityDate: '2024-11-01',
 
@@ -45,12 +25,30 @@ export default defineNuxtConfig({
     }
   },
 
+  vite: {
+    optimizeDeps: {
+      include: []
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  icon: {
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 256,
+
+      icons: [
+        'lucide:sun',
+        'lucide:moon'
+      ]
     }
   }
 })

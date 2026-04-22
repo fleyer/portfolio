@@ -20,15 +20,6 @@ const createImageSchema = () => z.object({
   alt: z.string()
 })
 
-const createAuthorSchema = () => z.object({
-  name: z.string(),
-  description: z.string().optional(),
-  username: z.string().optional(),
-  twitter: z.string().optional(),
-  to: z.string().optional(),
-  avatar: createImageSchema().optional()
-})
-
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -52,7 +43,7 @@ export default defineContentConfig({
               color: z.string()
             })
           }))
-        }),
+        })
       })
     }),
     experiences: defineCollection({
@@ -83,7 +74,7 @@ export default defineContentConfig({
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'experiences.yml'}
+        { include: 'experiences.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema())

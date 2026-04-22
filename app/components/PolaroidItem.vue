@@ -1,11 +1,16 @@
 <script setup lang="ts">
-defineProps<{
+withDefaults(defineProps<{
   image: {
-    src: string
-    alt: string
+    src: string | unknown
+    alt?: string
+  }
+  ui?: {
+    image: string
   }
   index: number
-}>()
+}>(), {
+  ui: () => ({ image: 'size-32' })
+})
 </script>
 
 <template>
@@ -19,7 +24,7 @@ defineProps<{
     <img
       :src="image.src"
       :alt="image.alt"
-      class="size-32 object-cover"
+      :class="`${ui.image} object-cover`"
     >
     <span class="w-32 text-xs text-black font-serif font-medium text-center mt-2">
       {{ image.alt }}

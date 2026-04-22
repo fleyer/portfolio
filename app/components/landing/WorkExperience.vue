@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const { data: page } = useAsyncData("experience-page", () => {
-  return queryCollection("pages").path('/experiences').first()
+const { data: page } = useAsyncData('experience-page', () => {
+  return queryCollection('pages').path('/experiences').first()
 })
 const { data: experiences } = await useAsyncData('experiences-landing', () => {
-  return queryCollection('experiences').order("startDate","DESC").all()
+  return queryCollection('experiences').order('startDate', 'DESC').all()
 })
 
-if(!page.value){
+if (!page.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Page not found',
@@ -21,7 +21,6 @@ if (!experiences.value) {
     fatal: true
   })
 }
-
 </script>
 
 <template>
