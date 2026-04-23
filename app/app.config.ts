@@ -1,9 +1,8 @@
-
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'romain_manchado.jpg',
-      light: 'romain_manchado.jpg',
+      dark: '/romain_manchado.jpg',
+      light: '/romain_manchado.jpg',
       alt: 'My profile picture'
     },
     email: 'manchado.romain@gmail.com',

@@ -42,7 +42,6 @@ useSeoMeta({
         :light="global.picture?.light!"
         :dark="global.picture?.dark!"
         :alt="global.picture?.alt!"
-        :as="{ img: 'img' }"
       />
     </UPageHero>
     <UPageSection
