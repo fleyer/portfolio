@@ -95,41 +95,56 @@ defineProps<{
         </div>
       </Motion>
     </template>
-
-    <UMarquee
-      pause-on-hover
-      class="flex-1 py-2 -mx-8 sm:-mx-12 lg:-mx-16  [--duration:40s] relative"
-      :overlay="false"
-      :ui="{
-        content: 'h-5/6'
+    <Motion
+      :initial="{
+        scale: 1.1,
+        opacity: 0,
+        filter: 'blur(20px)'
+      }"
+      :animate="{
+        scale: 1,
+        opacity: 1,
+        filter: 'blur(0px)'
+      }"
+      :transition="{
+        duration: 0.6,
+        delay: 0.7
       }"
     >
-      <Motion
-        v-for="(img, index) in page.hero.images"
-        :key="index"
-        class="h-full"
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: index * 0.1
-        }"
-      >
-        <NuxtImg
-          class="rounded-lg aspect-square object-cover h-full"
-          :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
-          v-bind="img"
-        />
-      </Motion>
-    </UMarquee>
+      <slot name="default" />
+    </Motion>
+
+    <Motion
+      :initial="{
+        scale: 1.1,
+        opacity: 0,
+        filter: 'blur(20px)'
+      }"
+      :animate="{
+        scale: 1,
+        opacity: 1,
+        filter: 'blur(0px)'
+      }"
+      :transition="{
+        duration: 0.6,
+        delay: 0.7
+      }"
+    >
+      <div class="flex-1 flex gap-4 justify-center items-end p-10">
+        <UButton
+          variant="subtle"
+          icon="i-lucide-external-link"
+        >
+          <NuxtLink
+            target="_blank"
+            to="/resume/Romain_Manchado_Resume_2026.pdf"
+            external
+            variant="subtle"
+          >See my resume</NuxtLink>
+        </UButton>
+        <MailButton />
+      </div>
+    </Motion>
   </UPageHero>
 </template>
 

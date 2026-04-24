@@ -28,9 +28,9 @@ hero:
     - src: /hero/picture-asia-10.webp
       alt: Picture Asia 10
 about:
-  title: "About Me"
+  title: "Readme"
   description: |
     Hi there! I’m a problem solver at heart. Whether in software development or on a climbing wall, I enjoy analyzing challenges, designing solutions, and refining them through iteration. <br>
-    In bouldering, routes are called “problems”—a fitting parallel to programming, where success comes from strategy, persistence, and precision.
+    In bouldering, routes are called “problems” - a perfect parallel to programming (isn't it?), where success comes from strategy, persistence, and precision.
 experiences:
   title: Work Experience
