@@ -74,7 +74,8 @@ export default defineContentConfig({
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'experiences.yml' }
+        { include: 'experiences.yml' },
+        { include: 'more.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema())

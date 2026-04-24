@@ -12,7 +12,17 @@ export default defineNuxtConfig({
     '@nuxtjs/mdc'
   ],
 
+  devtools: {
+    enabled: true
+  },
+
   css: ['~/assets/css/main.css'],
+
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
 
   compatibilityDate: '2024-11-01',
 

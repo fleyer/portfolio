@@ -20,6 +20,7 @@ defineProps<{
   >
     <template #headline>
       <Motion
+        :in-view-options="{ once: true }"
         :initial="{
           scale: 1.1,
           opacity: 0,
@@ -82,7 +83,12 @@ defineProps<{
           delay: 0.3
         }"
       >
-        {{ page.description }} <UIcon :name="page.icon" />
+        <div class="flex justify-center items-center">
+          {{ page.description }}<UIcon
+            class="ml-2"
+            :name="page.icon"
+          />
+        </div>
         <div class="mt-10 flex justify-center gap-4">
           <NuxtLink
             v-for="(social, index) in global.socials"
