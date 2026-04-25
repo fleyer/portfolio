@@ -31,7 +31,12 @@ export default defineContentConfig({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())
         }),
-        about: createBaseSchema(),
+        about: createBaseSchema().extend({
+          description: z.object({
+            sm: z.string(),
+            lg: z.string()
+          })
+        }),
         experiences: createBaseSchema().extend({
           items: z.array(z.object({
             date: z.date(),

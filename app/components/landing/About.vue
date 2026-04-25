@@ -16,7 +16,8 @@ defineProps<{
     }"
   >
     <template #description>
-      <MDC :value="page.about.description" />
+      <MDC :value="page.about.description.sm" class="block sm:hidden"/>
+      <MDC :value="page.about.description.lg" class="hidden sm:block"/>
     </template>
   </UPageSection>
 </template>
