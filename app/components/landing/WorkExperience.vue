@@ -27,12 +27,16 @@ if (!experiences.value) {
   <UPageSection
     v-if="page"
     id="experiences"
-    :title="page.title"
     :ui="{
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
+      title: 'text-left',
       container: '!pt-0 flex flex-column items-center lg:gap-8 w-full'
     }"
   >
+    <template #title>
+      <LandingTitle :title="page.title">
+        {{ page.title }}
+      </LandingTitle>
+    </template>
     <Motion
       v-for="(experience, index) in experiences"
       :key="experience.title"

@@ -10,10 +10,13 @@ const { data: page } = await useAsyncData('more-landing', () => {
     id="more"
     :title="page.title"
     :ui="{
-      container: '!pt-0',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium'
+      title: 'text-left',
+      container: '!pt-0 flex flex-column items-center lg:gap-8 w-full'
     }"
   >
+    <template #title>
+      <LandingTitle>{{ page.title }}</LandingTitle>
+    </template>
     <Gallery />
   </UPageSection>
 </template>

@@ -8,16 +8,25 @@ defineProps<{
 
 <template>
   <UPageSection
-    :title="page.about.title"
+
     :ui="{
       container: '!p-0',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
+      title: 'text-left',
       description: 'text-left mt-3 text-sm sm:text-md lg:text-sm text-muted'
     }"
   >
+    <template #title>
+      <LandingTitle>{{ page.about.title }}</LandingTitle>
+    </template>
     <template #description>
-      <MDC :value="page.about.description.sm" class="block sm:hidden"/>
-      <MDC :value="page.about.description.lg" class="hidden sm:block"/>
+      <MDC
+        :value="page.about.description.sm"
+        class="block sm:hidden"
+      />
+      <MDC
+        :value="page.about.description.lg"
+        class="hidden sm:block"
+      />
     </template>
   </UPageSection>
 </template>

@@ -37,6 +37,6 @@
   "packageManager": "pnpm@10.30.3",
 
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": "pnpm lint"
+    "*.{js,ts,jsx,tsx,vue}": "pnpm lint"
   }
 }
