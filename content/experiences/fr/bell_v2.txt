@@ -1,0 +1,25 @@
+Ingénieur Logiciel / Plateforme IoT & Smart Building
+
+Phase 1 : Ingestion de données IoT et supervision en temps réel
+Développement de pipelines de traitement de données serverless pour ingérer et analyser la télémétrie provenant de générateurs diesel industriels.
+
+Réalisations : Conception d’un moteur de reporting permettant d’automatiser le suivi de l’activité des générateurs (cycles de fonctionnement et de test), fournissant des insights opérationnels clés aux parties prenantes.
+Stack : Node.js, Azure Functions (serverless), Terraform, Docker, Vue.js, alertes en temps réel.
+
+Phase 2 : Migration de plateforme entreprise et passage à l’échelle
+Contribution à la migration stratégique de solutions IoT verticales vers une plateforme d’entreprise unifiée à grande échelle.
+
+Réalisations : Refonte complète du moteur de reporting pour répondre aux exigences de clients à grande échelle et déploiement de l’infrastructure cœur des services migrés.
+Stack : Node.js, Java (Quarkus), Kubernetes (AKS), Azure, Terraform, Redis, CosmosDB, MongoDB, GitLab CI/CD.
+
+Phase 3 : Data engineering temps réel et excellence DevOps
+Responsable de la réingénierie d’un pipeline legacy de géolocalisation en temps réel afin d’améliorer sa fiabilité et sa maintenabilité.
+
+Réalisations : Migration réussie d’un pipeline PySpark/Azure Synapse vers un workflow de développement moderne. Mise en place de tests unitaires, utilisation de Dev Containers pour garantir la cohérence des environnements et automatisation complète des pipelines CI/CD GitLab pour des déploiements stables en production.
+Stack : Python, PySpark, Azure Synapse, GitLab CI/CD, Dev Containers.
+
+Contributions transverses :
+
+Profilage et analyse : Identification d’une race condition entre plusieurs messages, générant des faux positifs dans la solution de monitoring. L’analyse a été rendue possible grâce à des outils tels que Jasper (OpenTelemetry), des sessions de debug approfondies et le monitoring de plusieurs files de messages.
+Assurance qualité : Amélioration de l’écosystème de tests avec Robot Framework via le développement de suites de tests E2E, incluant la création de mots-clés personnalisés pour Azure Event Hub afin de valider des architectures asynchrones orientées événements.
+

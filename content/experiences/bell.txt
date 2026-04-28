@@ -1,0 +1,14 @@
+Software Engineer — IoT & Smart Building Platform
+
+- Built serverless data pipelines to ingest and process real-time telemetry from industrial diesel generators, enabling scalable monitoring and analytics.
+- Designed and delivered a reporting engine automating generator activity tracking (operational/test cycles), unlocking actionable insights for stakeholders.
+- Led the redesign of the reporting system to support enterprise-scale clients, improving performance, scalability, and reliability.
+- Contributed to the migration of vertical IoT solutions to a unified enterprise platform, deploying core infrastructure and services at scale.
+- Re-engineered a legacy real-time geolocation pipeline, significantly improving maintainability and system robustness.
+- Migrated a PySpark/Azure Synapse pipeline to a modern development workflow, accelerating development cycles and improving developer experience.
+- Implemented automated CI/CD pipelines (GitLab), enabling reliable and repeatable production deployments.
+- Introduced unit testing and Dev Containers, ensuring environment consistency and increasing overall code quality.
+- Enhanced end-to-end testing with Robot Framework, including custom tooling for validating event-driven architectures using Azure Event Hub.
+- Diagnosed and resolved complex race conditions in distributed systems, reducing false positives in monitoring systems.
+
+Tech Stack: Node.js, Java (Quarkus), Python, PySpark, Azure (Functions, AKS, Synapse), Kubernetes, Terraform, Redis, Cosmos DB, MongoDB, Docker, GitLab CI/CD

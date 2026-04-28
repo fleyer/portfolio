@@ -1,0 +1,18 @@
+Full-Stack Developer (initial) → Lead Developer (promoted)
+
+Scope & Responsibilities
+
+- Drove platform evolution by joining an existing engineering team and leading the development of the Pilot Things platform. Promoted to Lead Developer, owning feature planning, architectural design, and complex problem-solving.
+- Orchestrated hybrid cloud deployments across AWS and on-premise environments, leveraging Infrastructure as Code (IaC) to ensure consistency and scalability.
+- Mentored and coached a team of developers, establishing coding best practices and accelerating project delivery.
+
+Key Achievements
+
+- Achieved 10x performance improvement by identifying and resolving critical bottlenecks, reducing data processing latency from >1s to <100ms.
+- Designed and implemented a multi-tenant architecture, enabling scalable growth and supporting multiple clients on a shared platform.
+- Built a data modeling engine allowing users to define custom device data transformations, increasing platform flexibility and user autonomy.
+- Led the development of a COVID-19 tracking MVP in <30 days, demonstrating rapid execution and adaptability to urgent market needs.
+- Expanded product capabilities by designing serverless data pipelines, enabling highly scalable and cost-efficient processing of incoming IoT telemetry streams.
+
+Tech Stack:
+Spring, Spring Boot, Node.js, AWS Lambda (Serverless), JWT, AWS Cognito, React, Preact, Terraform, AWS, Cloud-init
