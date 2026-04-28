@@ -21,14 +21,13 @@ useSeoMeta({
 
 <template>
   <UPage v-if="page">
-    <LandingHero :page="page">
-      <LandingAbout
-        :page
-        class="mt-10"
-      />
+    <LandingHero
+      ref="hero"
+      :page
+    >
+      <LandingAbout :page />
     </LandingHero>
-
-    <LandingWorkExperience />
-    <LandingMore />
+    <LandingWorkExperience ref="experience" />
+    <LandingMore ref="more" />
   </UPage>
 </template>

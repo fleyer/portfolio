@@ -16,7 +16,9 @@ defineProps<{
     }"
   >
     <template #title>
-      <LandingTitle>{{ page.about.title }}</LandingTitle>
+      <LandingTitle :ui="{ default: '' }">
+        {{ page.about.title }}
+      </LandingTitle>
     </template>
     <template #description>
       <MDC
@@ -30,7 +32,3 @@ defineProps<{
     </template>
   </UPageSection>
 </template>
-
-<style scoped>
-
-</style>

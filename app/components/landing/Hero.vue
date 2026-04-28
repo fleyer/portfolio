@@ -103,6 +103,9 @@ defineProps<{
     </template>
     <Motion
       :initial="{
+        display: 'flex',
+        flex: 1,
+        alignItems: 'center',
         scale: 1.1,
         opacity: 0,
         filter: 'blur(20px)'
@@ -136,7 +139,7 @@ defineProps<{
         delay: 0.7
       }"
     >
-      <div class="flex-1 flex gap-4 justify-center items-end p-10">
+      <div class="flex gap-4 justify-center items-end p-4 sm:p-10">
         <UButton
           variant="subtle"
           icon="i-lucide-external-link"
