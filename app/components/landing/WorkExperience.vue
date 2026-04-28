@@ -26,7 +26,6 @@ if (!experiences.value) {
 <template>
   <UPageSection
     v-if="page"
-    id="experiences"
     :ui="{
       title: 'text-left',
       container: '!pt-0 flex flex-column items-center lg:gap-8 w-full'
@@ -40,6 +39,7 @@ if (!experiences.value) {
     <Motion
       v-for="(experience, index) in experiences"
       :key="experience.title"
+      class="w-full"
       :initial="{ opacity: 0, transform: 'translateY(10px)' }"
       :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
       :transition="{ delay: 0.2 * index }"
@@ -66,8 +66,9 @@ if (!experiences.value) {
           />
         </div>
         <template #leading>
-          <span class="text-sm text-muted">
+          <span class="flex text-sm text-muted gap-2 items-center">
             {{ experience.startDate }} - {{ experience.endDate }}
+            <BadgeList>@{{ experience.company.name }},{{ experience.location }}</BadgeList>
           </span>
         </template>
 
