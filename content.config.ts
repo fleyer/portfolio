@@ -80,7 +80,7 @@ export default defineContentConfig({
       type: 'page',
       source: [
         { include: 'experiences.yml' },
-        { include: 'more.yml' }
+        { include: 'photography.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema())

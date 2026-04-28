@@ -1,13 +1,12 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('more-landing', () => {
-  return queryCollection('pages').path('/more').first()
+const { data: page } = await useAsyncData('photography-landing', () => {
+  return queryCollection('pages').path('/photography').first()
 })
 </script>
 
 <template>
   <UPageSection
     v-if="page"
-    id="more"
     :title="page.title"
     :ui="{
       title: 'text-left',

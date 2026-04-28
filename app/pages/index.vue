@@ -28,6 +28,9 @@ useSeoMeta({
       <LandingAbout :page />
     </LandingHero>
     <LandingWorkExperience ref="experience" />
-    <LandingMore ref="more" />
+    <LandingPhotography
+      id="photography"
+      ref="photography"
+    />
   </UPage>
 </template>

@@ -7,6 +7,6 @@ export const navLinks: NavigationMenuItem[] = [{
   label: 'Experiences',
   to: '/#experiences'
 }, {
-  label: 'More',
-  to: '/#more'
+  label: 'Photography',
+  to: '/#photography'
 }]
