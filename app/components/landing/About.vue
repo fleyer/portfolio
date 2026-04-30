@@ -16,7 +16,7 @@ defineProps<{
     }"
   >
     <template #title>
-      <LandingTitle :ui="{ default: '' }">
+      <LandingTitle>
         {{ page.about.title }}
       </LandingTitle>
     </template>

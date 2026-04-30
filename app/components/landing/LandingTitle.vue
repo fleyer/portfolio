@@ -5,7 +5,7 @@ withDefaults(defineProps<{
   }
 }>(),
 {
-  ui: () => ({ default: 'pt-20' })
+  ui: () => ({ })
 }
 )
 </script>
