@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useRoutingIntersectionObserver } from '~/composable/router/routingIntersectionObserver'
+import { useRoutingIntersectionObserver } from '~/composables/router/routingIntersectionObserver'
 
 const { data: page } = await useAsyncData('index', () => {
   return queryCollection('index').first()

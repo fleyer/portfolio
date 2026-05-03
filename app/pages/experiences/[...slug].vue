@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Navigation from '~/components/content/Navigation.vue'
-import { useNavNext, useNavPrevious } from '~/composable/nav/experience'
+import { useNavNext, useNavPrevious } from '~/composables/nav/experience'
 
 const route = useRoute()
 

@@ -4,13 +4,11 @@ import { disableScrollBehaviorUntilNextNav } from '~/router.options'
 const debouncedUpdateLocationHash = useDebounceFn(updateWindowLocationHash, 500)
 
 function updateWindowLocationHash([entry]: IntersectionObserverEntry[]) {
-  const router = useRouter()
-
   disableScrollBehaviorUntilNextNav()
   if (entry?.target.id) {
-    router.push(entry.target.id ? `#${entry.target.id}` : '')
+    navigateTo(entry.target.id ? `#${entry.target.id}` : '')
   } else {
-    router.push(window.location.pathname + window.location.search)
+    navigateTo('/' + window.location.search)
   }
 }
 
