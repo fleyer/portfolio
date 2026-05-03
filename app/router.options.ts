@@ -1,26 +1,17 @@
 import type { RouterConfig } from '@nuxt/schema'
 
-let SCROLL_BEHAVIOR = false
-
-export const disableScrollBehaviorUntilNextNav = function () {
-  SCROLL_BEHAVIOR = false
-}
-
-export const enableScrollBehavior = function () {
-  SCROLL_BEHAVIOR = true
-}
-
 export default <RouterConfig> {
+  scrollBehaviorType: 'smooth',
+
   scrollBehavior(to, from, savedPosition) {
-    if (!SCROLL_BEHAVIOR) {
-      enableScrollBehavior()
-      return { }
-    } else if (to.hash) {
+    if (savedPosition) return new Promise(resolve => setTimeout(() => resolve(savedPosition), 500))
+    else if (to.hash) {
       return {
         el: to.hash,
         top: 80, // Adjust for fixed header height
         behavior: 'smooth'
       }
-    } else return savedPosition || { top: 0 }
+    } else if (['/', ''].includes(to.path)) return { top: 0 }
+    else return false
   }
 }

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useRoutingIntersectionObserver } from '~/composables/router/routingIntersectionObserver'
-
 const { data: page } = await useAsyncData('index', () => {
   return queryCollection('index').first()
 })
@@ -19,12 +17,6 @@ useSeoMeta({
   description: page.value?.seo.description || page.value?.description,
   ogDescription: page.value?.seo.description || page.value?.description
 })
-
-useRoutingIntersectionObserver([
-  useTemplateRef<ComponentPublicInstance>('hero'),
-  useTemplateRef<ComponentPublicInstance>('experience'),
-  useTemplateRef<ComponentPublicInstance>('photography')
-])
 </script>
 
 <template>
