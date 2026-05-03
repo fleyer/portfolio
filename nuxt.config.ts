@@ -61,6 +61,10 @@ export default defineNuxtConfig({
         'lucide:moon'
       ]
     }
+  },
+
+  ogImage: {
+    zeroRuntime: true
   }
 
 })
