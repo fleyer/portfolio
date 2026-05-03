@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import Navigation from '~/components/content/Navigation.vue'
-import { useNavNext, useNavPrevious } from '~/composables/nav/experience'
-
 const route = useRoute()
 
 const { data: experience } = await useAsyncData(route.path + '/detail', () => {

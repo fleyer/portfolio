@@ -12,6 +12,10 @@ export default defineNuxtConfig({
     '@nuxtjs/mdc'
   ],
 
+  imports: {
+    dirs: ['composables/**', 'composables/**/**']
+  },
+
   devtools: {
     enabled: true
   },

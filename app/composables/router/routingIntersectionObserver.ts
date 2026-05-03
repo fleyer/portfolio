@@ -1,4 +1,5 @@
 import { useIntersectionObserver as _useIntersectionObserver } from '#imports'
+import type { UseIntersectionObserverReturn } from '@vueuse/core'
 import { disableScrollBehaviorUntilNextNav } from '~/router.options'
 
 const debouncedUpdateLocationHash = useDebounceFn(updateWindowLocationHash, 500)
@@ -22,9 +23,17 @@ function filterIntersectingEntries(fn: (entries: IntersectionObserverEntry[]) =>
 }
 
 export const useRoutingIntersectionObserver = function (targets: MaybeRefOrGetter[]) {
-  _useIntersectionObserver(
-    targets,
-    filterIntersectingEntries(debouncedUpdateLocationHash),
-    { threshold: 0.4 }
-  )
+  let observer: UseIntersectionObserverReturn
+
+  onMounted(() => {
+    observer = _useIntersectionObserver(
+      targets,
+      filterIntersectingEntries(debouncedUpdateLocationHash),
+      { threshold: 0.4 }
+    )
+  })
+
+  onBeforeRouteLeave(() => {
+    observer.stop()
+  })
 }
