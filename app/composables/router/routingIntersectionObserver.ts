@@ -7,7 +7,7 @@ const debouncedUpdateLocationHash = useDebounceFn(updateWindowLocationHash, 500)
 function updateWindowLocationHash([entry]: IntersectionObserverEntry[]) {
   disableScrollBehaviorUntilNextNav()
   if (entry?.target.id) {
-    navigateTo(entry.target.id ? `#${entry.target.id}` : '')
+    navigateTo(entry.target.id ? `#${entry.target.id}` : '', {})
   } else {
     navigateTo('/' + window.location.search)
   }
@@ -24,11 +24,15 @@ function filterIntersectingEntries(fn: (entries: IntersectionObserverEntry[]) =>
 
 export const useRoutingIntersectionObserver = function (targets: MaybeRefOrGetter[]) {
   let observer: UseIntersectionObserverReturn
+  const enableObserver = ref(false)
 
   onMounted(() => {
     observer = _useIntersectionObserver(
       targets,
-      filterIntersectingEntries(debouncedUpdateLocationHash),
+      (entries) => {
+        if (toValue(enableObserver)) filterIntersectingEntries(debouncedUpdateLocationHash)(entries)
+        else enableObserver.value = true
+      },
       { threshold: 0.4 }
     )
   })
