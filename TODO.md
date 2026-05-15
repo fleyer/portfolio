@@ -3,6 +3,7 @@
 ## Personal info
 - [x] Name
 - [x] Experiences
+- [ ] Skills
 
 ## Photography
 - [x] Images
@@ -10,10 +11,9 @@
 ## Layout
 - [x] navigation
 
-## Pages
+## Section
 - [x] About
 - [x] Experiences
-- [x] Projects
 - [x] Gallery
 
 
@@ -24,6 +24,6 @@
 - [x] Remove old personal information
 
 ## Deploy
-- [ ] publish repo
-- [ ] set up github page
+- [x] publish repo
+- [x] set up github page
 

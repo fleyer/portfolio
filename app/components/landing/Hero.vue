@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
+import TypeWriter from '../TypeWriter.vue'
 
 const { global } = useAppConfig()
 
@@ -84,10 +85,11 @@ defineProps<{
         }"
       >
         <div class="flex justify-center items-center">
-          {{ page.description }}<UIcon
+          <TypeWriter :values="page.description.split('-')" />
+          <!-- <UIcon
             class="ml-2"
             :name="page.icon"
-          />
+          /> -->
         </div>
         <div class="mt-10 flex justify-center gap-4">
           <NuxtLink

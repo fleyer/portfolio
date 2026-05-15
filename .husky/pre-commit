@@ -1,2 +1,2 @@
 pnpm exec lint-staged
-npx nuxt typecheck
+npx nuxi typecheck
