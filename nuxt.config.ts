@@ -20,6 +20,14 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  app: {
+    head: {
+      script: [
+        { src: 'https://static.cloudflareinsights.com/beacon.min.js?token=9296db2bfd8c4d5299246802bee664db' }
+      ]
+    }
+  },
+
   css: ['~/assets/css/main.css'],
 
   router: {
