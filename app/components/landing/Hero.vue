@@ -97,7 +97,7 @@ defineProps<{
             :key="index"
             class="rounded-full border border-solid w-10 h-10 flex justify-center items-center"
             :to="social.link"
-            target="blank"
+            target="_blank"
             external
           ><UIcon :name="social.icon" /></NuxtLink>
         </div>

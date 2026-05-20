@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: page } = useAsyncData('experience-page', () => {
+const { data: page } = await useAsyncData('experience-page', () => {
   return queryCollection('pages').path('/experiences').first()
 })
 const { data: experiences } = await useAsyncData('experiences-landing', () => {
