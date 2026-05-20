@@ -70,6 +70,17 @@ export default defineContentConfig({
         })
       })
     }),
+    skills: defineCollection({
+      type: 'data',
+      source: 'skills.yml',
+      schema: z.object({
+        title: z.string().nonempty(),
+        skills: z.array(z.object({
+          name: z.string().nonempty(),
+          category: z.array(z.string())
+        }))
+      })
+    }),
 
     experiencesContent: defineCollection({
       type: 'page',

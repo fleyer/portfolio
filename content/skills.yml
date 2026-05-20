@@ -1,0 +1,154 @@
+title: Skills
+skills:
+  - name: Spring
+    category:
+      - back-end
+      - Java
+
+  - name: Spring Boot
+    category:
+      - back-end
+      - Java
+
+  - name: Node.js
+    category:
+      - back-end
+      - JavaScript
+
+  - name: Serverless (AWS Lambda)
+    category:
+      - cloud
+      - AWS
+
+  - name: JWT
+    category:
+      - security
+
+  - name: AWS Cognito
+    category:
+      - cloud
+      - AWS
+
+  - name: React
+    category:
+      - front-end
+      - JavaScript
+
+  - name: Preact
+    category:
+      - front-end
+      - JavaScript
+
+  - name: Terraform
+    category:
+      - infra
+      - AWS
+      - Azure
+
+  - name: Kubernetes
+    category:
+      - cloud
+      - infra
+
+  - name: AWS Lambda
+    category:
+      - cloud
+      - AWS
+
+  - name: Cloud-init
+    category:
+      - cloud
+
+  - name: TypeScript
+    category:
+      - JavaScript
+      - front-end
+      - back-end
+      - language
+
+  - name: Vue.js
+    category:
+      - front-end
+      - JavaScript
+
+  - name: Java
+    category:
+      - back-end
+      - language
+
+  - name: Quarkus
+    category:
+      - back-end
+      - Java
+
+  - name: Kubernetes (AKS)
+    category:
+      - cloud
+      - infra
+
+  - name: Redis
+    category:
+      - caching
+      - database
+
+  - name: MongoDB
+    category:
+      - database
+
+  - name: GitLab CI/CD
+    category:
+       - CI/CD
+       - DevOps
+
+  - name: Azure Functions
+    category:
+      - cloud
+      - serverless
+      - Azure
+
+  - name: Azure Cosmos DB
+    category:
+      - cloud
+      - database
+      - Azure
+
+  - name: Azure Event Hub
+    category:
+      - cloud
+      - messaging
+      - Azure
+
+  - name: Azure IoT hub
+    category:
+      - cloud
+      - messaging
+      - Azure
+
+  - name: Docker
+    category:
+      - cloud
+      - container
+      - DevOps
+
+  - name: Python
+    category:
+      - language
+      - back-end
+      - data engineering
+
+  - name: PySpark
+    category:
+      - Python
+      - data
+      - engineering
+
+  - name: Azure Synapse
+    category:
+      - cloud,Azure,data
+      - engineering
+
+  - name: Dev Containers
+    category:
+      - container
+      - DevEx
+

@@ -1,4 +1,4 @@
-### Phase 1:
+### Phase 1: First steps in the team
 IoT Data Ingestion & Real-time Monitoring
 Developed serverless data processing pipelines to ingest and analyze telemetry from industrial diesel generators.
 
@@ -18,7 +18,7 @@ Developed serverless data processing pipelines to ingest and analyze telemetry f
 Node.js,Java,Azure Functions,Azure CosmosDB,Terraform,Kubernetes,Docker,Vue.js
 ::
 
-### Phase 2:
+### Phase 2: Lead on new features design & implementation
 Enterprise Platform Migration & Scalability
 Supported the strategic migration of vertical IoT solutions into a unified, large-scale enterprise platform.
 
@@ -36,10 +36,10 @@ Supported the strategic migration of vertical IoT solutions into a unified, larg
 #### Stack:
 
 ::badgeList
-Node.js,Typescript,Vue.js,Java,Srping Boot,Quarkus,Kubernetes (AKS),Azure,Terraform,Redis,CosmosDB,MongoDB,GitLab CI/CD
+Node.js,Typescript,Vue.js,Java,Sprqing Boot,Quarkus,Kubernetes (AKS),Azure,Terraform,Redis,CosmosDB,MongoDB,GitLab CI/CD
 ::
 
-### Phase 3:
+### Phase 3: Data engineering
 Real-Time Data Engineering & DevOps Excellence. Designed a new spark pipelien to ingest real time genrator telemetries and calculate fuel consumption.
 Tasked with re-engineering a legacy real-time geolocation tracking pipeline to improve reliability and maintainability.
 Plus integration of new kind of assets with grouping / splitting telemetries capabilities.
