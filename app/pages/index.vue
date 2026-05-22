@@ -27,6 +27,10 @@ useSeoMeta({
     >
       <LandingAbout :page />
     </LandingHero>
+    <LandingSkills
+      id="skills"
+      ref="skills"
+    />
     <LandingWorkExperience
       id="experiences"
       ref="experience"

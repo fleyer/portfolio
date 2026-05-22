@@ -2,150 +2,145 @@ title: Skills
 skills:
   - name: Spring
     category:
-      - back-end
-      - Java
+      - Back-end
+      - Framework
 
   - name: Spring Boot
     category:
-      - back-end
-      - Java
+      - Back-end
+      - Framework
 
   - name: Node.js
     category:
-      - back-end
-      - JavaScript
+      - Back-end
 
   - name: Serverless (AWS Lambda)
     category:
-      - cloud
-      - AWS
+      - Cloud
 
   - name: JWT
     category:
-      - security
+      - Authentication
 
   - name: AWS Cognito
     category:
-      - cloud
-      - AWS
+      - Cloud
+      - Authentication
+
+  - name: RedHat Keycloak
+    category:
+      - Authentication
 
   - name: React
     category:
-      - front-end
-      - JavaScript
+      - Front-end
 
   - name: Preact
     category:
-      - front-end
-      - JavaScript
+      - Front-end
 
   - name: Terraform
     category:
-      - infra
-      - AWS
-      - Azure
+      - Cloud
 
   - name: Kubernetes
     category:
-      - cloud
-      - infra
+      - Cloud
 
   - name: AWS Lambda
     category:
-      - cloud
-      - AWS
+      - Cloud
 
   - name: Cloud-init
     category:
-      - cloud
+      - Cloud
 
   - name: TypeScript
     category:
-      - JavaScript
-      - front-end
-      - back-end
-      - language
+      - Front-end
+      - Back-end
+      - Language
+
+  - name: Javascript
+    category:
+      - Front-end
+      - Back-end
+      - Language
 
   - name: Vue.js
     category:
-      - front-end
-      - JavaScript
+      - Front-end
 
   - name: Java
     category:
-      - back-end
-      - language
+      - Back-end
+      - Language
 
   - name: Quarkus
     category:
-      - back-end
-      - Java
+      - Back-end
+      - Framework
 
   - name: Kubernetes (AKS)
     category:
-      - cloud
-      - infra
+      - Cloud
 
   - name: Redis
     category:
-      - caching
-      - database
+      - Database
 
   - name: MongoDB
     category:
-      - database
+      - Database
+
+  - name: Postgres
+    category:
+      - Database
 
   - name: GitLab CI/CD
     category:
-       - CI/CD
-       - DevOps
+      - CI/CD
+      - DevOps
 
   - name: Azure Functions
     category:
-      - cloud
-      - serverless
-      - Azure
+      - Cloud
 
   - name: Azure Cosmos DB
     category:
-      - cloud
-      - database
-      - Azure
+      - Cloud
+      - Database
 
   - name: Azure Event Hub
     category:
-      - cloud
+      - Cloud
       - messaging
-      - Azure
 
   - name: Azure IoT hub
     category:
-      - cloud
+      - Cloud
       - messaging
-      - Azure
 
   - name: Docker
     category:
-      - cloud
+      - Cloud
       - container
       - DevOps
 
   - name: Python
     category:
-      - language
-      - back-end
-      - data engineering
+      - Language
+      - Back-end
+      - Data engineering
 
   - name: PySpark
     category:
-      - Python
-      - data
-      - engineering
+      - Data engineering
 
   - name: Azure Synapse
     category:
-      - cloud,Azure,data
-      - engineering
+      - Cloud
+      - Data engineering
 
   - name: Dev Containers
     category:
