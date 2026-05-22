@@ -36,7 +36,7 @@ Supported the strategic migration of vertical IoT solutions into a unified, larg
 #### Stack:
 
 ::badgeList
-Node.js,Typescript,Vue.js,Java,Sprqing Boot,Quarkus,Kubernetes (AKS),Azure,Terraform,Redis,CosmosDB,MongoDB,GitLab CI/CD
+Node.js,Typescript,Vue.js,Java,Spring Boot,Quarkus,Kubernetes (AKS),Azure,Terraform,Redis,CosmosDB,MongoDB,GitLab CI/CD
 ::
 
 ### Phase 3: Data engineering
