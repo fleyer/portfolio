@@ -11,7 +11,7 @@ export default <RouterConfig> {
         top: 80, // Adjust for fixed header height
         behavior: 'smooth'
       }
-    } else if (['/', ''].includes(to.path)) return { top: 0 }
+    } else if (['/', ''].includes(to.path)) return { top: 0, behavior: 'smooth' }
     else return false
   }
 }
