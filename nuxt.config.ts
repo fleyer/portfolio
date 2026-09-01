@@ -50,7 +50,10 @@ export default defineNuxtConfig({
 
   vite: {
     optimizeDeps: {
-      include: []
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit'
+      ]
     }
   },
 

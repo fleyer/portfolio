@@ -69,7 +69,7 @@ function filterPillStyle(category: string) {
     <Motion
       :initial="{ opacity: 0, transform: 'translateY(10px)' }"
       :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
-      :transition="{ delay: 0.1 }"
+      :transition="{ delay: 0.9 }"
       :in-view-options="{ once: true }"
       class="flex flex-wrap gap-2"
     >

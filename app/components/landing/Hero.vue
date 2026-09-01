@@ -12,11 +12,11 @@ defineProps<{
 <template>
   <UPageHero
     :ui="{
-      root: 'h-dvh',
+      root: '',
       headline: 'flex items-center justify-center',
       title: 'text-shadow-md max-w-lg mx-auto',
       links: 'mt-4 flex-col justify-center items-center',
-      container: 'gap-0 sm:gap-0 md:gap-0 lg:gap-0 h-dvh grid-rows-[auto_1fr] pb-0!'
+      container: 'gap-0 sm:gap-0 md:gap-0 lg:gap-0 grid-rows-[auto_1fr] pb-0!'
     }"
   >
     <template #headline>
